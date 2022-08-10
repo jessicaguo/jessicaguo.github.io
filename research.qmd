@@ -1,0 +1,11 @@
+---
+title: "Research"
+---
+
+### Plant water potential and NSC dynamics
+
+As part of my dissertation, I was
+
+### Species coexistence under water limitation
+
+Do co-existing plants partition water resources as suggested by species coexistence theory? In my early attempt to blend community ecology with plant ecophysiology, I addressed this question by comparing stem and soil water isotopes along an elevation gradient in Northern Arizona, ranging from the upland Sonoran Desert to the spruce-fir forests in the San Francisco Peaks. By calculating niche overlap with output from a Bayesian mixture model, we found that plants in more arid ecosystems do indeed have less overlap between species pairs than plants in more mesic ecosystems.

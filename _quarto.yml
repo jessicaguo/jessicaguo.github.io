@@ -1,0 +1,28 @@
+project:
+  type: website
+
+website:
+  title: "Jessica S. Guo"
+  twitter-card:
+    creator: "@JessicaSGuo"
+  navbar:
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "CV"
+        href: cv.qmd
+  page-footer:
+    left: "© Copyright 2022 Jessica S. Guo"
+
+format:
+  html:
+    theme: [sandstone, _variables.scss]
+    css: styles.css
+    toc: true
+
+editor: visual
+

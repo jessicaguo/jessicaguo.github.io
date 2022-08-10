@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jessica S. Guo",
+    "section": "",
+    "text": "Jessica Guo is a data scientist at the University of Arizona and a plant ecophysiologist at the Desert Botanical Garden. She blends her passion for data science education and expertise in desert plant water use to ask:\n\nHow do plants balance twin demands for water and carbon?\nwhat are the impacts of plant water use strategies for whole ecosystems?\n\n\n\nNorthern Arizona University Flagstaff, AZ\nPh.D. in Biological Sciences | 2019\nM.S. in Biological Sciences | 2013\nArizona State University Tempe, AZ\nCertificate in Statistics | 2015\nColumbia University New York, NY\nB.A. in Environmental Biology | 2010"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Species coexistence under water limitation\nDo co-existing plants partition water resources as suggested by species coexistence theory? In my early attempt to blend community ecology with plant ecophysiology, I addressed this question by comparing stem and soil water isotopes along an elevation gradient in Northern Arizona, ranging from the upland Sonoran Desert to the spruce-fir forests in the San Francisco Peaks. By calculating niche overlap with output from a Bayesian mixture model, we found that plants in more arid ecosystems do indeed have less overlap between species pairs than plants in more mesic ecosystems."
+  }
+]

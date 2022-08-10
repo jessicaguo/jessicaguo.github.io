@@ -1,0 +1,46 @@
+---
+title: "Jessica S. Guo"
+about:
+  template: trestles
+  image: guo_field.jpg
+  links:
+    - text: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=QL5IkxkAAAAJ&hl=en&oi=ao"
+    - text: Twitter
+      icon: twitter
+      url: "https://twitter.com/JessicaSGuo"
+    - text: GitHub
+      icon: github
+      url: "https://github.com/jessicaguo"
+    - text: Email
+      url: "mailto:jessicaguo@email.arizona.edu"
+    - text: CV
+      url: "Guo_CV_2022b.pdf"
+comments: false
+bibliography: references.bib
+csl: "cv.csl"
+---
+
+## About me
+
+Jessica Guo is a data scientist at the [University of Arizona](https://datascience.cals.arizona.edu/) and a plant ecophysiologist at the [Desert Botanical Garden](https://dbg.org/research-conservation/dpel/). She blends her passion for data science education and expertise in desert plant water use to ask:
+
+1)  How do plants balance twin demands for water and carbon?
+
+2)  How do plant water use strategies impact whole ecosystem water and carbon fluxes?
+
+### Education
+
+**Northern Arizona University** Flagstaff, AZ
+
+*Ph.D.* in Biological Sciences \| 2019
+
+*M.S.* in Biological Sciences \| 2013
+
+**Arizona State University** Tempe, AZ
+
+Certificate in Statistics \| 2015
+
+**Columbia University** New York, NY
+
+*B.A.* in Environmental Biology \| 2010
