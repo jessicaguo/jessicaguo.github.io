@@ -6,12 +6,12 @@ about:
   links:
     - text: "Google Scholar"
       url: "https://scholar.google.com/citations?user=QL5IkxkAAAAJ&hl=en&oi=ao"
-    - text: Twitter
-      icon: twitter
-      url: "https://twitter.com/JessicaSGuo"
     - text: GitHub
       icon: github
       url: "https://github.com/jessicaguo"
+    - text: Twitter
+      icon: twitter
+      url: "https://twitter.com/JessicaSGuo"
     - text: Email
       url: "mailto:jessicaguo@email.arizona.edu"
     - text: CV
@@ -23,9 +23,9 @@ csl: "cv.csl"
 
 ## About me
 
-Jessica Guo is a data scientist at the [University of Arizona](https://datascience.cals.arizona.edu/) and a plant ecophysiologist at the [Desert Botanical Garden](https://dbg.org/research-conservation/dpel/). She blends her passion for data science education and expertise in desert plant water use to ask:
+Jessica Guo is a plant ecophysiologist and data scientist who studies plant-environment interactions under extreme climate, focusing on drylands subject to potentially lethal combinations of heat and drought. Her research has led to novel understanding of how drought-tolerant species regulate plant water status. She blends her passion for reproducible workflows, interactive visualizations, and hierarchical Bayesian models with expertise in plant water relations to address the following questions:
 
-1)  How do plants balance twin demands for water and carbon?
+1)  How do plants regulate water status under variable and more extreme climate?
 
 2)  How do plant water use strategies impact whole ecosystem water and carbon fluxes?
 
