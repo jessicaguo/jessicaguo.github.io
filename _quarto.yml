@@ -8,14 +8,15 @@ website:
     creator: "@JessicaSGuo"
   navbar:
     right:
-      - text: "Home"
+      - text: "About"
         href: index.qmd
       - text: "Research"
         href: research.qmd
+      - text: "Data Science"
+        href: ds.qmd
       - text: "Teaching"
         href: teaching.qmd
-      - text: "CV"
-        href: cv.qmd
+
   page-footer:
     left: "© Copyright 2022 Jessica S. Guo"
 
