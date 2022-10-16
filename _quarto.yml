@@ -4,6 +4,8 @@ project:
 
 website:
   title: "Jessica S. Guo"
+  site-url: https://jessicaguo.github.io
+  repo-url: https://github.com/jessicaguo/jessicaguo.github.io
   twitter-card:
     creator: "@JessicaSGuo"
   navbar:
@@ -16,15 +18,18 @@ website:
         href: ds.qmd
       - text: "Teaching"
         href: teaching.qmd
+      - text: "Publications"
+        href: pubs.qmd
 
   page-footer:
     left: "© Copyright 2022 Jessica S. Guo"
 
 format:
   html:
-    theme: [sandstone, _variables.scss]
+    theme: journal
     css: styles.css
     toc: true
+    highlight-style: tango
 
 editor: visual
 

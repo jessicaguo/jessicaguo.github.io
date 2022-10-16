@@ -1,4 +1,154 @@
 ---
-title: "teaching"
-editor: visual
+title: "Teaching"
+format:
+  html:
+    toc: true
+    toc-title: "Contents"
+    toc-location: left
+    toc-depth: 4
 ---
+
+### Data science workshops
+::: {.d-flex .justify-content-between}
+::: {}
+Reproducibility and Data Science in R
+:::
+::: {.text-end}
+Spr & Fa 2022
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+Data Skills for Ecosystem Genomics
+:::
+::: {.text-end}
+May & Oct 2022
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+Dates and Times in R
+:::
+::: {.text-end}
+Apr 2022
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+Intro to Bayesian Modeling (NCEAS)
+:::
+::: {.text-end}
+Oct 2021
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+Critical Skills to Scale Up Ecology (ESA-SEEDS)
+:::
+::: {.text-end}
+Sep 2021
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+Intro to Bayesian modeling in Ecology (ESA)
+:::
+::: {.text-end}
+Aug 2021
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+Fitting leaf-lefel gas exchange data in R
+:::
+::: {.text-end}
+Apr 2021
+:::
+:::
+
+
+### Instructor of record
+
+::: {.d-flex .justify-content-between}
+::: {}
+Scientific Writing in Microbiology
+:::
+::: {.text-end}
+Spr 2018, Fa 2018, Spr 2019 
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+Scientific Writing in Ecology
+:::
+::: {.text-end}
+Spr 2017
+:::
+:::
+
+### Teaching assistant
+
+::: {.d-flex .justify-content-between}
+::: {}
+Applied Bayesian Modeling Lab
+:::
+::: {.text-end}
+Fa 2016, Fa 2017
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+Biometry Lab
+:::
+::: {.text-end}
+Fa 2014
+:::
+:::
+
+
+::: {.d-flex .justify-content-between}
+::: {}
+Diversity of Life Lab
+:::
+::: {.text-end}
+Spr 2013
+:::
+:::
+
+
+::: {.d-flex .justify-content-between}
+::: {}
+Unity of Life Lab
+:::
+::: {.text-end}
+Spr 2012, Fa 2012, Fa 2013
+:::
+:::
+
+### Guest lecturer 
+
+::: {.d-flex .justify-content-between}
+::: {}
+Plants and Climate
+:::
+::: {.text-end}
+Spr 2017
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+::: {}
+Biometry
+:::
+::: {.text-end}
+Fa 2014
+:::
+:::

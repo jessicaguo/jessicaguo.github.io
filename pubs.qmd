@@ -1,0 +1,47 @@
+---
+title: "Publications"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, results='asis', echo=FALSE, message=FALSE, warning=FALSE}
+library(htmltools)
+library(dplyr)
+
+pub.data <- read.csv("data/academic_dataset.csv") %>% 
+  filter(status == "Published")
+
+
+years <- unique(pub.data$year) %>% sort(decreasing = T)
+for(k in years){
+  cat(paste0(h2(k)))
+  
+  pub.in <- pub.data %>% 
+    filter(year == k) %>% 
+    arrange(type_of_publication)
+  
+  for(type in unique(pub.in$type_of_publication)){
+    cat(paste0(h4(type)))
+    
+    pub.k <- pub.in %>% filter(type_of_publication == type)
+    
+     for(i in 1:nrow(pub.k)){
+       cat(paste0(
+         div(
+          pub.k$authors[i], 
+          paste0("(", pub.k$year[i], ") "),
+          tags$b(pub.k$title[i]),
+          tags$i(pub.k$item_info[i]),
+          tags$link(pub.k$url_text[i])
+           )
+         )
+       )
+     }
+  }
+  
+  cat(paste0(br(), br()))
+  }
+```
+

@@ -18,8 +18,7 @@ about:
     - text: CV
       url: "Guo_CV_2022b.pdf"
 comments: false
-bibliography: references.bib
-csl: "cv.csl"
+
 ---
 
 

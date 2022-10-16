@@ -1,4 +1,29 @@
 ---
-title: "cv"
-editor: visual
+title: "Data Science"
+description: "An assortment of analyses and Shiny apps"
+format:
+  html:
+    toc: true
+    toc-title: "Contents"
+    toc-location: left
 ---
+
+### *In situ* soil moisture release curves
+
+The RainMan project explores the plant and ecosystem consequences of temporal repackaging of precipitation. The [app](https://viz.datascience.arizona.edu/rainman-soildata/) shows how soil water content and soil water potential respond to different treatments. I also [report](https://viz.datascience.arizona.edu/VG_curves/) Van Genuchten parameters that were derived from *in situ* sensors.
+
+### Timeseries analysis of VOCs
+
+Volatile organic compounds (VOCs) of decomposing litter can signal the presence and activity of the microbial community. I designed an algorithm and [app](https://viz.datascience.arizona.edu/VOC-timeseries/) for detrending, modeling, and classifying 304 VOC timeseries (not yet public).
+
+### Exploring a *C. diffile* gene expression database
+
+The bacterial pathogen *Clostridioides difficile* is the leading cause of health-care related bacterial infections in the US, and the mechanisms of disease are poorly understood and actively investigated. I built an [app](https://viz.datascience.arizona.edu/cdiff_dashboard2/) for researchers to query and visualize gene expression data across published studies.
+
+### Postfire effect of rangeland restoration practices
+
+A naturally-occurring fire burned a rangeland restoration experiment, offering a unique opportunity to assess how well herbicide, grazing, and native grass seeding could control cheatgrass invasion after a major disturbance. I implemented a series of Bayesian ANOVAs to assess biomass, count, and cover of *Bromus tectorum* that accounted for overdispersion and a complex experimental design.
+
+### Predicting trends in US organic agriculture
+
+Understanding future trends in organic acriculture sales can inform production decisions by growers; while the USDA conducts surveys at the state level, data are infrequent and sometimes missing. We developed Bayesian hierarchical regression models to estimate trends in the number of organic farms, area under organic production, and sales of organic produce, which included missing values and error estimates.
