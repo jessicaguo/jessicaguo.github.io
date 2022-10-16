@@ -9,7 +9,7 @@ website:
   twitter-card:
     creator: "@JessicaSGuo"
   navbar:
-    right:
+    left:
       - text: "About"
         href: index.qmd
       - text: "Research"
