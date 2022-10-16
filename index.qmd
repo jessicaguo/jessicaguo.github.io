@@ -1,8 +1,9 @@
 ---
 title: "Jessica S. Guo"
 about:
+  id: hero-heading
   template: trestles
-  image: guo_field.jpg
+  image: Guo_2022.jpg
   links:
     - text: "Google Scholar"
       url: "https://scholar.google.com/citations?user=QL5IkxkAAAAJ&hl=en&oi=ao"
@@ -21,26 +22,30 @@ bibliography: references.bib
 csl: "cv.csl"
 ---
 
-## About me
 
-Jessica Guo is a plant ecophysiologist and data scientist who studies plant-environment interactions under extreme climate, focusing on drylands subject to potentially lethal combinations of heat and drought. Her research has led to novel understanding of how drought-tolerant species regulate plant water status. She blends her passion for reproducible workflows, interactive visualizations, and hierarchical Bayesian models with expertise in plant water relations to address the following questions:
+Jessica Guo is a plant ecophysiologist and data scientist who studies plant-environment interactions under extreme climate, focusing on drylands subject to potentially lethal combinations of heat and drought. She blends her passion for reproducible workflows, interactive visualizations, and hierarchical Bayesian models with expertise in plant water relations to address the following questions:
 
 1)  How do plants regulate water status under variable and more extreme climate?
 
 2)  How do plant water use strategies impact whole ecosystem water and carbon fluxes?
 
-### Education
+#### Education
 
-**Northern Arizona University** Flagstaff, AZ
+**Northern Arizona University** \| Flagstaff, AZ
 
 *Ph.D.* in Biological Sciences \| 2019
 
 *M.S.* in Biological Sciences \| 2013
 
-**Arizona State University** Tempe, AZ
+**Arizona State University** \| Tempe, AZ
 
 Certificate in Statistics \| 2015
 
-**Columbia University** New York, NY
+**Columbia University** \| New York, NY
 
 *B.A.* in Environmental Biology \| 2010
+
+#### Appointments
+**University of Arizona** \| Data Scientist \| September 2020 - present
+
+**University of Utah** \| Postdoctoral Researcher \| July 2019 - August 2020
