@@ -79,7 +79,7 @@ tibble(
     type_of_publication = "Article",
     year = 2021,
     title = "Harnessing the NEON data revolution to advance open environmental science with a diverse and data‐capable community.",
-    authors = "Nagy, R.C., J.K. Balch, [...] J.S. Guo",
+    authors = "Nagy, R.C., J.K. Balch, [...] J.S. Guo [...].",
     item_info = "Ecosphere.",
     url_text = "https://doi.org/10.1002/ecs2.3833"
     # url_code = character(),
