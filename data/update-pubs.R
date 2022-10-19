@@ -14,13 +14,13 @@ tibble(
   url_youtube = character()
 ) %>% 
   add_row(
-    status = "Accepted",
+    status = "Published",
     type_of_publication = "Article",
     year = 2022,
     title = "Contemporary tree growth shows altered climate memory.",
     authors = "Peltier, D.M.P., W.R.L. Anderegg, J.S. Guo, K. Ogle.",
     item_info = "Ecology Letters.",
-    # url_text = ""
+    url_text = "https://doi.org/10.1111/ele.14130"
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
