@@ -18,9 +18,7 @@ about:
     - text: CV
       url: "Guo_CV_2022b.pdf"
 comments: false
-
 ---
-
 
 Jessica Guo is a plant ecophysiologist and data scientist who studies plant-environment interactions under extreme climate, focusing on drylands subject to potentially lethal combinations of heat and drought. She blends her passion for reproducible workflows, interactive visualizations, and hierarchical Bayesian models with expertise in plant water relations to address the following questions:
 
@@ -45,6 +43,7 @@ Certificate in Statistics \| 2015
 *B.A.* in Environmental Biology \| 2010
 
 #### Appointments
+
 **University of Arizona** \| Data Scientist \| September 2020 - present
 
 **University of Utah** \| Postdoctoral Researcher \| July 2019 - August 2020

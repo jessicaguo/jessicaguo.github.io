@@ -16,6 +16,18 @@ tibble(
   add_row(
     status = "Published",
     type_of_publication = "Article",
+    year = 2023,
+    title = "Quantifying the drivers of ecosystem fluxes and water potential across the soil-plant-atmosphere continuum in an arid woodland.",
+    authors = "Kannenberg, S.A., M.L. Barnes, D.R. Bowling, A.W. Driscoll, J.S. Guo, W.R.L. Anderegg.",
+    item_info = "Agriculture and Forest Meteorology.",
+    url_text = "https://doi.org/10.1016/j.agrformet.2022.109269"
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) %>% 
+  add_row(
+    status = "Published",
+    type_of_publication = "Article",
     year = 2022,
     title = "Contemporary tree growth shows altered climate memory.",
     authors = "Peltier, D.M.P., W.R.L. Anderegg, J.S. Guo, K. Ogle.",
