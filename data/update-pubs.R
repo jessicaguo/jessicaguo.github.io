@@ -1,4 +1,5 @@
 library(dplyr)
+library(readr)
 
 #publications <- 
 tibble(
@@ -12,7 +13,19 @@ tibble(
   url_code = character(),
   url_slides = character(),
   url_youtube = character()
-) %>% 
+) |> 
+  add_row(
+    status = "Published",
+    type_of_publication = "Article",
+    year = 2023,
+    title = "Pre-fire grazing and herbicide treatments can affect post-fire vegetation in a Great Basin rangeland.",
+    authors = "Gornish, E.S., J.S. Guo, L.M. Porensky, B.L. Perryman, E.A. Leger.",
+    item_info = "Ecological Solutions and Evidence.",
+    url_text = "https://doi.org/10.1002/2688-8319.12215"
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -24,7 +37,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -36,7 +49,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -48,7 +61,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -60,7 +73,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -72,7 +85,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>%
+  ) |>
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -84,7 +97,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
 
   add_row(
     status = "Published",
@@ -97,7 +110,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -109,7 +122,7 @@ tibble(
     #url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -121,7 +134,7 @@ tibble(
     #url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -133,7 +146,7 @@ tibble(
     #url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -145,7 +158,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -157,7 +170,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -169,7 +182,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -181,7 +194,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -193,7 +206,7 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   add_row(
     status = "Published",
     type_of_publication = "Article",
@@ -205,7 +218,8 @@ tibble(
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
-  ) %>% 
+  ) |> 
   
   
-  write.csv("data/academic_dataset.csv")
+  write_csv("data/academic_dataset.csv")
+
