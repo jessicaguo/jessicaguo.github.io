@@ -9,86 +9,137 @@ format:
 ---
 
 ### Data science workshops
+
 ::: {.d-flex .justify-content-between}
-::: {}
-Reproducibility and Data Science in R
+<div>
+
+Combining datasets using 'dplyr'
+
+</div>
+
+::: text-end
+Mar 2023
 :::
-::: {.text-end}
+:::
+
+::: {.d-flex .justify-content-between}
+<div>
+
+Creating personal websites with Quarto
+
+</div>
+
+::: text-end
+Oct 2022
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+<div>
+
+Reproducibility and Data Science in R
+
+</div>
+
+::: text-end
 Spr & Fa 2022
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Data Skills for Ecosystem Genomics
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 May & Oct 2022
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Dates and Times in R
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Apr 2022
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Intro to Bayesian Modeling (NCEAS)
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Oct 2021
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Critical Skills to Scale Up Ecology (ESA-SEEDS)
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Sep 2021
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Intro to Bayesian modeling in Ecology (ESA)
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Aug 2021
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Fitting leaf-lefel gas exchange data in R
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Apr 2021
 :::
 :::
 
-
 ### Instructor of record
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Scientific Writing in Microbiology
-:::
-::: {.text-end}
-Spr 2018, Fa 2018, Spr 2019 
+
+</div>
+
+::: text-end
+Spr 2018, Fa 2018, Spr 2019
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Scientific Writing in Ecology
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Spr 2017
 :::
 :::
@@ -96,59 +147,75 @@ Spr 2017
 ### Teaching assistant
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Applied Bayesian Modeling Lab
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Fa 2016, Fa 2017
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Biometry Lab
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Fa 2014
 :::
 :::
 
-
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Diversity of Life Lab
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Spr 2013
 :::
 :::
 
-
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Unity of Life Lab
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Spr 2012, Fa 2012, Fa 2013
 :::
 :::
 
-### Guest lecturer 
+### Guest lecturer
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Plants and Climate
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Spr 2017
 :::
 :::
 
 ::: {.d-flex .justify-content-between}
-::: {}
+<div>
+
 Biometry
-:::
-::: {.text-end}
+
+</div>
+
+::: text-end
 Fa 2014
 :::
 :::
