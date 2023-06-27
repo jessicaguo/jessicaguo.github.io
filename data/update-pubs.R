@@ -18,6 +18,18 @@ tibble(
     status = "Published",
     type_of_publication = "Article",
     year = 2023,
+    title = "The importance of monsoon precipitation for foundation tree species across the semiarid Southwestern U.S.",
+    authors = "Samuels-Crow, K.E., D.M. Peltier, Y. Liu, J.S. Guo, J.M. Welker, W.R.L. Anderegg, G.W. Koch, C. Schwalm, M. Litvak, J.D. Shaw, K. Ogle.",
+    item_info = "Frontiers in Forests and Global Change.",
+    url_text = "https://doi.org/10.3389/ffgc.2023.1116786"
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) |> 
+  add_row(
+    status = "Published",
+    type_of_publication = "Article",
+    year = 2023,
     title = "Pre-fire grazing and herbicide treatments can affect post-fire vegetation in a Great Basin rangeland.",
     authors = "Gornish, E.S., J.S. Guo, L.M. Porensky, B.L. Perryman, E.A. Leger.",
     item_info = "Ecological Solutions and Evidence.",
