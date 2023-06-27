@@ -13,6 +13,18 @@ format:
 ::: {.d-flex .justify-content-between}
 <div>
 
+Undrstanding the foundations of 'ggplot2'
+
+</div>
+
+::: text-end
+June 2023
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+<div>
+
 Combining datasets using 'dplyr'
 
 </div>
