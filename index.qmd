@@ -14,7 +14,7 @@ about:
       icon: twitter
       url: "https://twitter.com/JessicaSGuo"
     - text: Email
-      url: "mailto:jessicaguo@email.arizona.edu"
+      url: "mailto:jessicaguo@arizona.edu"
     - text: CV
       url: "Guo_CV_2023b.pdf"
 comments: false
