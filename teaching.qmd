@@ -211,6 +211,30 @@ Spr 2012, Fa 2012, Fa 2013
 ::: {.d-flex .justify-content-between}
 <div>
 
+Plant Physiological Ecology
+
+</div>
+
+::: text-end
+Fa 2023
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+<div>
+
+Plants Functional Traits
+
+</div>
+
+::: text-end
+Spr 2023
+:::
+:::
+
+::: {.d-flex .justify-content-between}
+<div>
+
 Plants and Climate
 
 </div>

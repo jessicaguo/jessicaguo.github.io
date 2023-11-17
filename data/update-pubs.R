@@ -18,6 +18,30 @@ tibble(
     status = "Published",
     type_of_publication = "Article",
     year = 2023,
+    title = "Predicting spring phenology in deciduous broadleaf forests: NEON phenology forecasting community challenge.",
+    authors = "Wheeler, K., M. Dietze, D. LeBauer, J. Peters, A.D. Richardson, Q. Thomas, K. Zhu, U. Bhat, S. Munch, R.F. Buzbee, M. Chen, B. Goldstein, J.S. Guo, D. Hao, C. Jones, M. Kelly-Fair, H. Liu, C. Malmborg, N. Neupane, D. Pal, A.A. Ross, V. Shirey, Y. Song, M. Steen, E.A. Vance, W. Woelmer, J. Wynne, L. Zachmann.",
+    item_info = "Agricultural and Forest Meteorology.",
+    url_text = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4542703"
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) |> 
+  add_row(
+    status = "Published",
+    type_of_publication = "Article",
+    year = 2023,
+    title = "Use of biological feedback as a health behavior change technique in adults: scoping review.",
+    authors = "Richardson, K.M., M.R. Jospe, A.A. Saleh, T.N. Clarke, A.R. Bedoya, N. Behrens, K.M.K. Marano, L. Cigan, Y. Liao, E.R. Scott, J.S. Guo, A. Aguinaga, S.M. Schembre.",
+    item_info = "Journal of Medical Internet Research.",
+    url_text = "https://doi.org/10.2196/44359"
+    # url_code = character(),
+    # url_slides = character(),
+    # url_youtube = character()
+  ) |> 
+  add_row(
+    status = "Published",
+    type_of_publication = "Article",
+    year = 2023,
     title = "The importance of monsoon precipitation for foundation tree species across the semiarid Southwestern U.S.",
     authors = "Samuels-Crow, K.E., D.M. Peltier, Y. Liu, J.S. Guo, J.M. Welker, W.R.L. Anderegg, G.W. Koch, C. Schwalm, M. Litvak, J.D. Shaw, K. Ogle.",
     item_info = "Frontiers in Forests and Global Change.",
