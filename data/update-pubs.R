@@ -21,7 +21,7 @@ tibble(
     title = "Predicting spring phenology in deciduous broadleaf forests: NEON phenology forecasting community challenge.",
     authors = "Wheeler, K., M. Dietze, D. LeBauer, J. Peters, A.D. Richardson, Q. Thomas, K. Zhu, U. Bhat, S. Munch, R.F. Buzbee, M. Chen, B. Goldstein, J.S. Guo, D. Hao, C. Jones, M. Kelly-Fair, H. Liu, C. Malmborg, N. Neupane, D. Pal, A.A. Ross, V. Shirey, Y. Song, M. Steen, E.A. Vance, W. Woelmer, J. Wynne, L. Zachmann.",
     item_info = "Agricultural and Forest Meteorology.",
-    url_text = "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4542703"
+    url_text = "https://doi.org/10.1016/j.agrformet.2023.109810"
     # url_code = character(),
     # url_slides = character(),
     # url_youtube = character()
