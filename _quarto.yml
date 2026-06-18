@@ -3,34 +3,37 @@ project:
   output-dir: docs
 
 website:
-  title: "Jessica S. Guo"
+  
+  image: guo.png
   site-url: https://jessicaguo.github.io
   repo-url: https://github.com/jessicaguo/jessicaguo.github.io
   twitter-card:
     creator: "@JessicaSGuo"
   navbar:
+    background: "#676d02"
+    logo: PEPPER-logo.png
     left:
-      - text: "About"
+      - text: "Home"
         href: index.qmd
       - text: "Research"
         href: research.qmd
-      - text: "Data Science"
-        href: ds.qmd
-      - text: "Teaching"
-        href: teaching.qmd
+      - text: "Current Students"
+        href: current-students.qmd
+      - text: "Lab Alumni"
+        href: lab-alumni.qmd
       - text: "Publications"
         href: pubs.qmd
 
   page-footer:
-    left: "© Copyright 2022 Jessica S. Guo"
+    left: "© Copyright 2026 Jessica S. Guo"
 
 format:
   html:
     theme: 
-      light: journal
-      dark: darkly
+      [styles.css, journal]
+      
     css: styles.css
-    toc: true
+    toc: false
     highlight-style: tango
 
 editor: visual

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Meet the PEPPER Lab’s current working group!">
 
-<title>Research</title>
+<title>Current Students</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,42 +72,14 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
-<meta name="twitter:title" content="Research">
-<meta name="twitter:image" content="https://jessicaguo.github.io/img/psinet_logo.png">
+<meta name="twitter:title" content="Current Students">
+<meta name="twitter:description" content="Meet the PEPPER Lab’s current working group!">
+<meta name="twitter:image" content="https://jessicaguo.github.io/guo.png">
 <meta name="twitter:creator" content="@JessicaSGuo">
-<meta name="twitter:image-height" content="367">
-<meta name="twitter:image-width" content="270">
+<meta name="twitter:image-height" content="200">
+<meta name="twitter:image-width" content="200">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -133,11 +106,11 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page"> 
+    <a class="nav-link" href="./research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./current-students.html"> 
+    <a class="nav-link active" href="./current-students.html" aria-current="page"> 
 <span class="menu-text">Current Students</span></a>
   </li>  
   <li class="nav-item">
@@ -156,19 +129,18 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Contents</h2>
    
   <ul>
-  <li><a href="#network-science-for-plant-water-potential" id="toc-network-science-for-plant-water-potential" class="nav-link active" data-scroll-target="#network-science-for-plant-water-potential">Network science for plant water potential</a></li>
-  <li><a href="#connecting-plant-water-potential-with-proximal-and-satellite-remote-sensing" id="toc-connecting-plant-water-potential-with-proximal-and-satellite-remote-sensing" class="nav-link" data-scroll-target="#connecting-plant-water-potential-with-proximal-and-satellite-remote-sensing">Connecting plant water potential with proximal and satellite remote sensing</a></li>
-  <li><a href="#water-use-strategies-from-plants-to-fluxes" id="toc-water-use-strategies-from-plants-to-fluxes" class="nav-link" data-scroll-target="#water-use-strategies-from-plants-to-fluxes">Water use strategies from plants to fluxes</a></li>
-  <li><a href="#stomatal-regulation-in-desert-riparian-trees" id="toc-stomatal-regulation-in-desert-riparian-trees" class="nav-link" data-scroll-target="#stomatal-regulation-in-desert-riparian-trees">Stomatal regulation in desert riparian trees</a></li>
-  <li><a href="#hydraulic-behavior-and-nsc-dynamics-of-larrea-tridentata" id="toc-hydraulic-behavior-and-nsc-dynamics-of-larrea-tridentata" class="nav-link" data-scroll-target="#hydraulic-behavior-and-nsc-dynamics-of-larrea-tridentata">Hydraulic behavior and NSC dynamics of <em>Larrea tridentata</em></a></li>
-  <li><a href="#species-coexistence-under-water-limitation" id="toc-species-coexistence-under-water-limitation" class="nav-link" data-scroll-target="#species-coexistence-under-water-limitation">Species coexistence under water limitation</a></li>
+  <li><a href="#in-situ-soil-moisture-release-curves" id="toc-in-situ-soil-moisture-release-curves" class="nav-link active" data-scroll-target="#in-situ-soil-moisture-release-curves"><em>In situ</em> soil moisture release curves</a></li>
+  <li><a href="#timeseries-analysis-of-vocs" id="toc-timeseries-analysis-of-vocs" class="nav-link" data-scroll-target="#timeseries-analysis-of-vocs">Timeseries analysis of VOCs</a></li>
+  <li><a href="#exploring-a-c.-diffile-gene-expression-database" id="toc-exploring-a-c.-diffile-gene-expression-database" class="nav-link" data-scroll-target="#exploring-a-c.-diffile-gene-expression-database">Exploring a <em>C. diffile</em> gene expression database</a></li>
+  <li><a href="#postfire-effect-of-rangeland-restoration-practices" id="toc-postfire-effect-of-rangeland-restoration-practices" class="nav-link" data-scroll-target="#postfire-effect-of-rangeland-restoration-practices">Postfire effect of rangeland restoration practices</a></li>
+  <li><a href="#predicting-trends-in-us-organic-agriculture" id="toc-predicting-trends-in-us-organic-agriculture" class="nav-link" data-scroll-target="#predicting-trends-in-us-organic-agriculture">Predicting trends in US organic agriculture</a></li>
   </ul>
 </nav>
 </nav>
@@ -177,16 +149,21 @@ window.Quarto = {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research</h1>
+<h1 class="title">Current Students</h1>
+</div>
+
+<div>
+  <div class="description">
+    Meet the PEPPER Lab’s current working group!
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta column-page-right">
+<div class="quarto-title-meta">
 
     
   
@@ -198,81 +175,25 @@ window.Quarto = {
 </header>
 
 
-<section id="network-science-for-plant-water-potential" class="level3">
-<h3 class="anchored" data-anchor-id="network-science-for-plant-water-potential">Network science for plant water potential</h3>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p>Plant water potential data is critical to understanding plant and ecosystem function, yet are discrete and difficult to discover. To tackle this challenge, Kim Novick and I established <a href="https://psinetrcn.github.io/">PSInet</a>, a global water potential database. We incentivize scientists to contribute their data to the network in exchange for co-authorship on the data publication and early access to the completed database. Armed with a centralized repository of harmonized water potential time series, our network will be equipped to address foundational questions, promote synthetic analyses, and provide a validation dataset for the modeling and remote sensing communities.</p>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/psinet_logo.png" class="quarto-figure quarto-figure-center figure-img" height="300"></p>
-</figure>
-</div>
-</div>
-</div>
+<section id="in-situ-soil-moisture-release-curves" class="level3">
+<h3 class="anchored" data-anchor-id="in-situ-soil-moisture-release-curves"><em>In situ</em> soil moisture release curves</h3>
+<p>The RainMan project explores the plant and ecosystem consequences of temporal repackaging of precipitation. The <a href="https://viz.datascience.arizona.edu/rainman-soildata/">app</a> shows how soil water content and soil water potential respond to different treatments. I also <a href="https://viz.datascience.arizona.edu/VG_curves/">report</a> Van Genuchten parameters that were derived from <em>in situ</em> sensors.</p>
 </section>
-<section id="connecting-plant-water-potential-with-proximal-and-satellite-remote-sensing" class="level3">
-<h3 class="anchored" data-anchor-id="connecting-plant-water-potential-with-proximal-and-satellite-remote-sensing">Connecting plant water potential with proximal and satellite remote sensing</h3>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/rainman.png" class="quarto-figure quarto-figure-center figure-img" height="300"></p>
-</figure>
-</div>
-</div><div class="column" style="width:60%;">
-<p>While water potential underlies many plant and ecosystem functions, direct measurements can be difficult to collect. Hyperspectral and microwave remote sensing offer possible proxies for plant water potential, and careful validation is needed to develop useful proxies. In a recent project, I used the Rainfall Manipulation experiment at the Santa Rita Experimental Range to evaluate how leaf-level hyperspectral corresponds with plant water potential across a pulse-drydown experiment. At the creosote shrubland NEON site, I connect psychrometer timeseries of plant water potential with vegetation optical depth over a growing season.</p>
-</div>
-</div>
+<section id="timeseries-analysis-of-vocs" class="level3">
+<h3 class="anchored" data-anchor-id="timeseries-analysis-of-vocs">Timeseries analysis of VOCs</h3>
+<p>Volatile organic compounds (VOCs) of decomposing litter can signal the presence and activity of the microbial community. I designed an algorithm and <a href="https://viz.datascience.arizona.edu/VOC-timeseries/">app</a> for detrending, modeling, and classifying 304 VOC timeseries.</p>
 </section>
-<section id="water-use-strategies-from-plants-to-fluxes" class="level3">
-<h3 class="anchored" data-anchor-id="water-use-strategies-from-plants-to-fluxes">Water use strategies from plants to fluxes</h3>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p>Vascular plants face an inevitable tradeoff between carbon gain and water loss. While plant taxa have long been classified by drought tolerance using multiple metrics, high-frequency instrumentation such as sap flux, stem psychrometry, and eddy covariance have allowed for response-based categorization of plant hydraulic regulation. I return to the pinyon-juniper woodlands to connect plant hydraulic regulation to ecosystem carbon and water fluxes. Predawn water potential improves Monteith-style prediction of tower GPP over the 2021 growing season.</p>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/PJ_flux_psy.jpg" class="quarto-figure quarto-figure-center figure-img" height="300"></p>
-</figure>
-</div>
-</div>
-</div>
+<section id="exploring-a-c.-diffile-gene-expression-database" class="level3">
+<h3 class="anchored" data-anchor-id="exploring-a-c.-diffile-gene-expression-database">Exploring a <em>C. diffile</em> gene expression database</h3>
+<p>The bacterial pathogen <em>Clostridioides difficile</em> is the leading cause of health-care related bacterial infections in the US, and the mechanisms of disease are poorly understood and actively investigated. I built an <a href="https://viz.datascience.arizona.edu/cdiff_dashboard2/">app</a> for researchers to query and visualize gene expression data across published studies.</p>
 </section>
-<section id="stomatal-regulation-in-desert-riparian-trees" class="level3">
-<h3 class="anchored" data-anchor-id="stomatal-regulation-in-desert-riparian-trees">Stomatal regulation in desert riparian trees</h3>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img src="img/cottonwood.jpg" class="img-fluid" width="300"></p>
-</div><div class="column" style="width:&quot;60%;">
-<p>In dryland ecosystems, riparian trees are foundation species that provision key ecosystem services, including habitat for rare or endangered species. Thus, it is important to understand riparian tree responses to increasing atmospheric dryness and water limitation. Using sap flux time series, I modeled how the sensitivity of stomatal conductance to vapor pressure deficit changes sub-seasonally in (1) a common garden drought experiment and (2) nine naturally-occurring species across an elevation gradient.</p>
-</div>
-</div>
+<section id="postfire-effect-of-rangeland-restoration-practices" class="level3">
+<h3 class="anchored" data-anchor-id="postfire-effect-of-rangeland-restoration-practices">Postfire effect of rangeland restoration practices</h3>
+<p>A naturally-occurring fire burned a rangeland restoration experiment, offering a unique opportunity to assess how well herbicide, grazing, and native grass seeding could control cheatgrass invasion after a major disturbance. I implemented a series of Bayesian ANOVAs to assess biomass, count, and cover of <em>Bromus tectorum</em> that accounted for overdispersion and a complex experimental design. The <a href="https://doi.org/10.1002/2688-8319.12215">paper</a> and <a href="https://github.com/cct-datascience/rangeland-restore">repository</a> are openly accessible.</p>
 </section>
-<section id="hydraulic-behavior-and-nsc-dynamics-of-larrea-tridentata" class="level3">
-<h3 class="anchored" data-anchor-id="hydraulic-behavior-and-nsc-dynamics-of-larrea-tridentata">Hydraulic behavior and NSC dynamics of <em>Larrea tridentata</em></h3>
-<div class="columns">
-<div class="column" style="width:60%;">
-<p>Plant water potential (<span class="math inline">\(\Psi\)</span>) is an integrated measure of water status that underlies the critical plant functions of photosynthesis and transpiration. However, <span class="math inline">\(\Psi\)</span> is typically measured too infrequently to capture its dependence on environmental variables such as soil moisture and atmospheric dryness, which can be highly dynamic. In the evergreen desert shrub <em>Larrea tridentata</em>, I used sub-daily measurements of <span class="math inline">\(\Psi\)</span> coupled with frequent monitoring of non-structural carbohydrates to understand (1) the diurnal and seasonal responses of plant water status to environmental drivers and (2) the consequences for plant carbon dynamics.</p>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/creosote.jpg" class="quarto-figure quarto-figure-center figure-img" height="300"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="species-coexistence-under-water-limitation" class="level3">
-<h3 class="anchored" data-anchor-id="species-coexistence-under-water-limitation">Species coexistence under water limitation</h3>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img src="img/oaks.jpg" class="img-fluid" width="300"></p>
-</div><div class="column" style="width:60%;">
-<p>Do co-existing plants partition water resources as suggested by species coexistence theory? In an early attempt to blend community ecology with plant ecophysiology, I compared stem and soil water isotopes along an elevation gradient in Northern Arizona, ranging from the upland Sonoran Desert to the spruce-fir forests in the San Francisco Peaks. By calculating niche overlap with output from a Bayesian mixture model, we found that plants in more arid ecosystems do indeed have less overlap between species pairs than plants in more mesic ecosystems.</p>
-</div>
-</div>
+<section id="predicting-trends-in-us-organic-agriculture" class="level3">
+<h3 class="anchored" data-anchor-id="predicting-trends-in-us-organic-agriculture">Predicting trends in US organic agriculture</h3>
+<p>Understanding future trends in organic agriculture sales can inform production decisions by growers; while the USDA conducts surveys at the state level, data are infrequent and sometimes missing. We developed Bayesian hierarchical regression models to estimate trends in the number of organic farms, area under organic production, and sales of organic produce, which included missing values and error estimates. The <a href="https://doi.org/10.1016/j.crsust.2021.100097">paper</a> and <a href="https://github.com/cct-datascience/state_organic_ag">repository</a> are openly accessible.</p>
 
 
 </section>

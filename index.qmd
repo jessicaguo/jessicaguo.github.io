@@ -1,9 +1,9 @@
 ---
-title: "Jessica S. Guo"
+title: "PEPPER Lab"
 about:
   id: hero-heading
   template: trestles
-  image: Guo_2022.jpg
+  image: group-photo.jpg
   links:
     - text: "Google Scholar"
       url: "https://scholar.google.com/citations?user=QL5IkxkAAAAJ&hl=en&oi=ao"
@@ -20,11 +20,15 @@ about:
 comments: false
 ---
 
-Jessica Guo is a plant ecophysiologist and data scientist who studies plant-environment interactions under extreme climate, focusing on drylands subject to potentially lethal combinations of heat and drought. She blends her passion for reproducible workflows, interactive visualizations, and hierarchical Bayesian models with expertise in plant water relations to address the following questions:
+# **PEPPER lab (Plant & Ecosystem Physiology, Potential, and Environment Lab)**
 
-1)  How do plants regulate water status under variable and more extreme climate?
+The PEPPER lab studies how plants respond physiologically to climate change and the impacts of those responses for the whole ecosystem. Methods include field and lab data collection, novel plant instrumentation, data harmonization, and Bayesian statistical modeling.
 
-2)  How do plant water use strategies impact whole ecosystem water and carbon fluxes?
+## Professor:
+
+### Jessica S. Guo
+
+Jessica Guo is a plant ecophysiologist and data scientist who studies plant-environment interactions under extreme climate, focusing on drylands subject to potentially lethal combinations of heat and drought. She blends her passion for reproducible workflows, interactive visualizations, and hierarchical Bayesian models with expertise in plant water relations
 
 #### Education
 
