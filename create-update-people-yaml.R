@@ -36,24 +36,33 @@ current <- read_sheet(
   #drop_na(exact_filename_of_headshot_including_filetype_extension) |> 
   mutate(exact_filename_of_headshot_including_filetype_extension = paste0("/img/headshots/",exact_filename_of_headshot_including_filetype_extension),
          title = paste0(first, " ", last),
-         graduation_year = paste0("'", str_extract(graduation_year, pattern = "..(..)", group = 1)),
-         PEPPER_start_year = as.integer(PEPPER_start_year))|> 
-  rename(subtitle = graduation_year, image = exact_filename_of_headshot_including_filetype_extension)
+         graduation_year = ifelse(
+           is.na(graduation_year),"",
+           paste0("'", str_extract(graduation_year, pattern = "..(..)", group = 1))),         PEPPER_start_year = as.integer(PEPPER_start_year))|> 
+  rename(subtitle = graduation_year, image = exact_filename_of_headshot_including_filetype_extension, path = link_to_share_ie_linkedIn)
 
 write_csv(current, file = "data/people-current.csv")
 
-alum <-  read_sheet(
-  ss = "https://docs.google.com/spreadsheets/d/1p4d0mhtqWc9HJQJQqUMVdAtjllwz1uKYFLjmbRqjUMk/edit?usp=sharing",
-  sheet = 3, .name_repair = "universal")|> 
+alum <-  read_sheet(ss = "https://docs.google.com/spreadsheets/d/1p4d0mhtqWc9HJQJQqUMVdAtjllwz1uKYFLjmbRqjUMk/edit?usp=sharing",
+                    sheet = 3,
+                    .name_repair = "universal") |>
   lapply(as.character) |>
-  as.data.frame()|> 
-  #drop_na(exact_filename_of_headshot_including_filetype_extension) |> 
-  mutate(exact_filename_of_headshot_including_filetype_extension = paste0("/img/headshots/",exact_filename_of_headshot_including_filetype_extension),
-         title = paste0(first, " ", last),
-         graduation_year = paste0("'", str_extract(graduation_year, pattern = "..(..)", group = 1)),
-         PEPPER_start_year = as.integer(PEPPER_start_year)) |> 
-  rename(subtitle = graduation_year, image = exact_filename_of_headshot_including_filetype_extension)
-
+  as.data.frame() |>
+  #drop_na(exact_filename_of_headshot_including_filetype_extension) |>
+  mutate(
+    exact_filename_of_headshot_including_filetype_extension = paste0(
+      "/img/headshots/",
+      exact_filename_of_headshot_including_filetype_extension
+    ),
+    title = paste0(first, " ", last),
+    graduation_year = ifelse(is.na(graduation_year), "", paste0(
+      "'", str_extract(graduation_year, pattern = "..(..)", group = 1)
+    )),
+    PEPPER_start_year = as.integer(PEPPER_start_year)
+  ) |>
+  rename(subtitle = graduation_year,
+         image = exact_filename_of_headshot_including_filetype_extension,
+         path = link_to_share_ie_linkedIn)
 
 write_csv(alum, file = "data/people-alum.csv")
 
