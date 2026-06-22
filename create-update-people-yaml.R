@@ -1,8 +1,7 @@
 #creating people.yml for people.qmd to use. basically we have the google sheet
 #which has relevant information and we have the google drive which has the
-#associated headshots. The .qmd uses YAML to put everything together, and one
-#.yml can have multiple documents inside it, so lets create a yaml document that
-#contains the headshots and info of the people
+#associated headshots. The .qmd uses YAML to put everything together, so lets
+#make yaml documents that contains the headshots and info of the people
 
 #whenever the sheet or headshots get updatated just rerun this whole script
 
@@ -25,8 +24,8 @@ drive_download(overwrite = TRUE,
   
 
 
-#I WISH THAT i had known this beforehand, but the names in yaml need to be
-#exactly "title" "subtitle" and "image" for it to work
+#I WISH THAT i had known this beforehand, but the names in the yamls need to be
+#exactly "title" "path" subtitle" and "image" for it to work
 
 current <- read_sheet(
   ss = "https://docs.google.com/spreadsheets/d/1p4d0mhtqWc9HJQJQqUMVdAtjllwz1uKYFLjmbRqjUMk/edit?usp=sharing",
