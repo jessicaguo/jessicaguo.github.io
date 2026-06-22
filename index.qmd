@@ -3,32 +3,30 @@ title: "PEPPER Lab"
 about:
   id: hero-heading
   template: trestles
-  image: group-photo.jpg
+  image: img/group-photo.jpg
   links:
     - text: "Google Scholar"
       url: "https://scholar.google.com/citations?user=QL5IkxkAAAAJ&hl=en&oi=ao"
     - text: GitHub
       icon: github
-      url: "https://github.com/jessicaguo"
-    - text: Twitter
-      icon: twitter
-      url: "https://twitter.com/JessicaSGuo"
+      url: "https://github.com/PEPPER-lab-HMC"
     - text: Email
       url: "mailto:jessicaguo@arizona.edu"
-    - text: CV
-      url: "Guo_CV_2023b.pdf"
+
 comments: false
 ---
 
 # **PEPPER lab (Plant & Ecosystem Physiology, Potential, and Environment Lab)**
 
-The PEPPER lab studies how plants respond physiologically to climate change and the impacts of those responses for the whole ecosystem. Methods include field and lab data collection, novel plant instrumentation, data harmonization, and Bayesian statistical modeling.
+The PEPPER lab at Harvey Mudd College studies how plants respond physiologically to climate change and the impacts of those responses for the whole ecosystem. Methods include field and lab data collection, novel plant instrumentation, data harmonization, and Bayesian statistical modeling.
 
 ## Professor:
 
 ### Jessica S. Guo
 
-Jessica Guo is a plant ecophysiologist and data scientist who studies plant-environment interactions under extreme climate, focusing on drylands subject to potentially lethal combinations of heat and drought. She blends her passion for reproducible workflows, interactive visualizations, and hierarchical Bayesian models with expertise in plant water relations
+![](img/Guo_2022.jpg){fig-align="center"}
+
+Jessica Guo is a plant ecophysiologist and data scientist who studies plant-environment interactions under extreme climate, focusing on drylands subject to potentially lethal combinations of heat and drought. She blends her passion for reproducible workflows, interactive visualizations, and hierarchical Bayesian models with expertise in plant water relations.
 
 #### Education
 

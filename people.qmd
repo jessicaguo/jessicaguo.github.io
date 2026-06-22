@@ -1,12 +1,62 @@
 ---
 title: "People"
 description: "Meet the PEPPER Lab's working group!"
+
+page-layout: full
+date-format: "YYYY"
+listing:  #an example of listing external links
+#  template: item-default-external.ejs
+- id: lab-member
+  sort: 
+    - "PEPPER_start_year asc"
+    - "last asc"
+  type: grid
+  fields: [image, title, subtitle]
+  grid-item-align: center
+  grid-columns: 4
+  image-height: 200px
+  categories: false
+#  sort-ui: true
+#  filter-ui: true
+  contents: 
+    - /data/people/current/*.yml
+
+- id: lab-alumni
+  sort: 
+    - "graduation_year desc"
+    - "last asc"  
+  type: table
+  fields: [image, title, subtitle]
+  grid-item-align: center  
+  grid-columns: 4
+  image-height: 25px
+  field-display-names: 
+      title: "Name"
+      subtitle: "Grad Year"
+      started: "Graduated"
+#  categories: true
+#  sort-ui: true
+#  filter-ui: true
+  contents: data/people/alum/*.yml
+
+title-block-banner: true
 format:
   html:
     toc: true
     toc-title: "Contents"
     toc-location: left
 ---
+
+## Current Students
+
+:::{#lab-member}
+:::
+
+
+## Lab Alumni
+
+:::{#lab-alumni}
+:::
 
 ### *In situ* soil moisture release curves
 

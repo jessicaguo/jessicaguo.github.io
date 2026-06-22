@@ -1,6 +1,6 @@
 ---
-title: "Lab Alumni"
-description: "Students or individuals who have contributed to PEPPER Lab research in the past"
+title: "Teaching"
+description: "Workshops and classes taught"
 format:
   html:
     toc: true

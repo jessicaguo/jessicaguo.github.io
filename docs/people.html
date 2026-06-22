@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Meet the PEPPER Lab’s working group!">
 
-<title>Publications</title>
+<title>People</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,6 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -70,21 +73,106 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-lab-member .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-first","listing-last","listing-school","listing-subtitle","listing-PEPPER_start_year","listing-link_to_share_ie_linkedIn","listing-major","listing-image","listing-title"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-lab-member'] = new List('listing-lab-member', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-lab-alumni .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-first","listing-last","listing-school","listing-subtitle","listing-PEPPER_start_year","listing-link_to_share_ie_linkedIn","listing-major","listing-image","listing-title"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-lab-alumni'] = new List('listing-lab-alumni', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
-<meta name="twitter:title" content="Publications">
-<meta name="twitter:image" content="https://jessicaguo.github.io/img/PEPPER-logo.png">
+<meta name="twitter:title" content="People">
+<meta name="twitter:description" content="Meet the PEPPER Lab’s working group!">
+<meta name="twitter:image" content="https://jessicaguo.github.io/img/headshots/NA">
 <meta name="twitter:creator" content="@JessicaSGuo">
-<meta name="twitter:image-height" content="4096">
-<meta name="twitter:image-width" content="4096">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -104,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./people.html"> 
+    <a class="nav-link active" href="./people.html" aria-current="page"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
@@ -116,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./pubs.html" aria-current="page"> 
+    <a class="nav-link" href="./pubs.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
 </ul>
@@ -127,136 +215,259 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Publications</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-right">
+      <h1 class="title">People</h1>
+                  <div>
+        <div class="description">
+          Meet the PEPPER Lab’s working group!
+        </div>
+      </div>
+                </div>
   </div>
+    
   
+  <div class="quarto-title-meta column-page-right">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#current-students" id="toc-current-students" class="nav-link active" data-scroll-target="#current-students">Current Students</a></li>
+  <li><a href="#lab-alumni" id="toc-lab-alumni" class="nav-link" data-scroll-target="#lab-alumni">Lab Alumni</a>
+  <ul class="collapse">
+  <li><a href="#in-situ-soil-moisture-release-curves" id="toc-in-situ-soil-moisture-release-curves" class="nav-link" data-scroll-target="#in-situ-soil-moisture-release-curves"><em>In situ</em> soil moisture release curves</a></li>
+  <li><a href="#timeseries-analysis-of-vocs" id="toc-timeseries-analysis-of-vocs" class="nav-link" data-scroll-target="#timeseries-analysis-of-vocs">Timeseries analysis of VOCs</a></li>
+  <li><a href="#exploring-a-c.-diffile-gene-expression-database" id="toc-exploring-a-c.-diffile-gene-expression-database" class="nav-link" data-scroll-target="#exploring-a-c.-diffile-gene-expression-database">Exploring a <em>C. diffile</em> gene expression database</a></li>
+  <li><a href="#postfire-effect-of-rangeland-restoration-practices" id="toc-postfire-effect-of-rangeland-restoration-practices" class="nav-link" data-scroll-target="#postfire-effect-of-rangeland-restoration-practices">Postfire effect of rangeland restoration practices</a></li>
+  <li><a href="#predicting-trends-in-us-organic-agriculture" id="toc-predicting-trends-in-us-organic-agriculture" class="nav-link" data-scroll-target="#predicting-trends-in-us-organic-agriculture">Predicting trends in US organic agriculture</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-right" id="quarto-document-content">
 
 
-</header>
 
 
-<h2 class="anchored">
-2023
-</h2>
-<h4 class="anchored">
-Article
-</h4>
-<div>
-<p>Wheeler, K., M. Dietze, D. LeBauer, J. Peters, A.D. Richardson, Q. Thomas, K. Zhu, U. Bhat, S. Munch, R.F. Buzbee, M. Chen, B. Goldstein, J.S. Guo, D. Hao, C. Jones, M. Kelly-Fair, H. Liu, C. Malmborg, N. Neupane, D. Pal, A.A. Ross, V. Shirey, Y. Song, M. Steen, E.A. Vance, W. Woelmer, J. Wynne, L. Zachmann. (2023) <b>Predicting spring phenology in deciduous broadleaf forests: NEON phenology forecasting community challenge.</b> <i>Agricultural and Forest Meteorology.</i> <a href="https://doi.org/10.1016/j.agrformet.2023.109810">https://doi.org/10.1016/j.agrformet.2023.109810</a></p>
+
+<section id="current-students" class="level2">
+<h2 class="anchored" data-anchor-id="current-students">Current Students</h2>
+<div id="listing-lab-member" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./img/headshots/NA" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Taylor Baugh
+</h5>
+<div class="card-subtitle listing-subtitle">
+’27
 </div>
-<div>
-<p>Richardson, K.M., M.R. Jospe, A.A. Saleh, T.N. Clarke, A.R. Bedoya, N. Behrens, K.M.K. Marano, L. Cigan, Y. Liao, E.R. Scott, J.S. Guo, A. Aguinaga, S.M. Schembre. (2023) <b>Use of biological feedback as a health behavior change technique in adults: scoping review.</b> <i>Journal of Medical Internet Research.</i> <a href="https://doi.org/10.2196/44359">https://doi.org/10.2196/44359</a></p>
 </div>
-<div>
-<p>Samuels-Crow, K.E., D.M. Peltier, Y. Liu, J.S. Guo, J.M. Welker, W.R.L. Anderegg, G.W. Koch, C. Schwalm, M. Litvak, J.D. Shaw, K. Ogle. (2023) <b>The importance of monsoon precipitation for foundation tree species across the semiarid Southwestern U.S.</b> <i>Frontiers in Forests and Global Change.</i> <a href="https://doi.org/10.3389/ffgc.2023.1116786">https://doi.org/10.3389/ffgc.2023.1116786</a></p>
+</div></a>
 </div>
-<div>
-<p>Gornish, E.S., J.S. Guo, L.M. Porensky, B.L. Perryman, E.A. Leger. (2023) <b>Pre-fire grazing and herbicide treatments can affect post-fire vegetation in a Great Basin rangeland.</b> <i>Ecological Solutions and Evidence.</i> <a href="https://doi.org/10.1002/2688-8319.12215">https://doi.org/10.1002/2688-8319.12215</a></p>
+<div class="g-col-1" data-index="1">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./img/headshots/aabhas_headshot.jpg" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Aabhas Senapati
+</h5>
+<div class="card-subtitle listing-subtitle">
+’27
 </div>
-<div>
-<p>Kannenberg, S.A., M.L. Barnes, D.R. Bowling, A.W. Driscoll, J.S. Guo, W.R.L. Anderegg. (2023) <b>Quantifying the drivers of ecosystem fluxes and water potential across the soil-plant-atmosphere continuum in an arid woodland.</b> <i>Agriculture and Forest Meteorology.</i> <a href="https://doi.org/10.1016/j.agrformet.2022.109269">https://doi.org/10.1016/j.agrformet.2022.109269</a></p>
 </div>
-<br><br>
-<h2 class="anchored">
-2022
-</h2>
-<h4 class="anchored">
-Article
-</h4>
-<div>
-<p>Peltier, D.M.P., W.R.L. Anderegg, J.S. Guo, K. Ogle. (2022) <b>Contemporary tree growth shows altered climate memory.</b> <i>Ecology Letters.</i> <a href="https://doi.org/10.1111/ele.14130">https://doi.org/10.1111/ele.14130</a></p>
+</div></a>
 </div>
-<div>
-<p>Guo, J.S., S.E. Bush, K.R. Hultine. (2022) <b>Temporal variation in stomatal sensitivity to vapor pressure deficit in western riparian forests.</b> <i>Functional Ecology.</i> <a href="https://doi.org/10.1111/1365-2435.14066">https://doi.org/10.1111/1365-2435.14066</a></p>
+<div class="g-col-1" data-index="2">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./img/headshots/NA" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Danny Tran
+</h5>
+<div class="card-subtitle listing-subtitle">
+’27
 </div>
-<div>
-<p>Bowen, G.J., J.S. Guo, S.T. Allen. (2022) <b>A 3-D groundwater isoscape of the contiguous USA for forensic and water resource science.</b> <i>PLOS One.</i> <a href="https://doi.org/10.1371/journal.pone.0261651">https://doi.org/10.1371/journal.pone.0261651</a></p>
 </div>
-<div>
-<p>Kannenberg, S., J.S. Guo, K. Novick, W. Anderegg, X. Feng, D. Kennedy, A. Konings, J. Martínez-Vilalta, A. Matheny. (2022) <b>Opportunities, challenges, and pitfalls in characterizing plant water-use strategies.</b> <i>Functional Ecology.</i> <a href="https://doi.org/10.1111/1365-2435.13945">https://doi.org/10.1111/1365-2435.13945</a></p>
+</div></a>
 </div>
-<div>
-<p>Peltier, D.M.P., J.S. Guo, P. Nguyen, M. Bangs, L. Gear, M. Wilson, S. Jefferys, K. Samuel-Crow, L.L. Yocom, Y. Liu, M.K. Fell, D. Auty, C. Schwalm, W.R.L. Anderegg, G.W. Koch, M.E. Litvack, K. Ogle. (2022) <b>Temperature memory and NSC mediate legacies of a hot drought in trees across the southwestern US.</b> <i>Tree Physiology.</i> <a href="https://doi.org/10.1093/treephys/tpab091">https://doi.org/10.1093/treephys/tpab091</a></p>
+<div class="g-col-1" data-index="3">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./img/headshots/NA" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Claire Johnston
+</h5>
+<div class="card-subtitle listing-subtitle">
+’29
 </div>
-<br><br>
-<h2 class="anchored">
-2021
-</h2>
-<h4 class="anchored">
-Article
-</h4>
-<div>
-<p>Nagy, R.C., J.K. Balch, […] J.S. Guo […]. (2021) <b>Harnessing the NEON data revolution to advance open environmental science with a diverse and data‐capable community.</b> <i>Ecosphere.</i> <a href="https://doi.org/10.1002/ecs2.3833">https://doi.org/10.1002/ecs2.3833</a></p>
 </div>
-<div>
-<p>Bush, S.E., J.S. Guo, D. Dehn, K. Grady, J. Hull, E. Johnson, D. Koepke, R. Long, D. Potts, K. Hultine. (2021) <b>Adaptive versus non-adaptive responses to drought in a non-native riparian tree/shrub, Tamarix spp.</b> <i>Agricultural and Forest Meteorology.</i> <a href="https://doi.org/10.1016/j.agrformet.2021.108342">https://doi.org/10.1016/j.agrformet.2021.108342</a></p>
+</div></a>
 </div>
-<div>
-<p>Fiorella, R.P., S.P. Good, S.T. Allen, J.S. Guo, C.J. Still, D.C. Noone, W.R.L. Anderegg, C.R. Florian, H. Luo, N. Pingintha-Durden, G.J. Bowen (2021) <b>Calibration strategies for detecting macroscale patterns in NEON atmospheric carbon isotope observations.</b> <i>Journal of Geophysical Research – Biogeosciences</i> <a href="https://doi.org/10.1029/2020JG005862">https://doi.org/10.1029/2020JG005862</a></p>
+<div class="g-col-1" data-index="4">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./img/headshots/NA" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Clover Weiss
+</h5>
+<div class="card-subtitle listing-subtitle">
+’28
 </div>
-<div>
-<p>Peltier, D.M.P., J.S. Guo, P. Nguyen, M. Bangs, L. Gear, M. Wilson, S. Jefferys, K. Samuel-Crow, L.L. Yocom, Y. Liu, M.K. Fell, D. Auty, C. Schwalm, W.R.L. Anderegg, G.W. Koch, M.E. Litvack, K. Ogle. (2021) <b>Temporal controls on crown nonstructural carbohydrates in southwestern US tree species.</b> <i>Tree Physiology.</i> <a href="https://doi.org/10.1093/treephys/tpaa149">https://doi.org/10.1093/treephys/tpaa149</a></p>
 </div>
-<div>
-<p>Mpanga, I.K., R. Tronstad, J.S. Guo, D. LeBauer, J. Idowu. (2021) <b>On-farm land management strategies and production challenges in United States organic agricultural systems.</b> <i>Current Research in Environmental Sustainability.</i> <a href="https://doi.org/10.1016/j.crsust.2021.100097">https://doi.org/10.1016/j.crsust.2021.100097</a></p>
+</div></a>
 </div>
-<br><br>
-<h2 class="anchored">
-2020
-</h2>
-<h4 class="anchored">
-Article
-</h4>
-<div>
-<p>Guo, J.S., L. Gear, K.R. Hultine, G.W. Koch, K. Ogle. (2020) <b>Non‐structural carbohydrate dynamics associated with antecedent stem water potential and air temperature in a dominant desert shrub.</b> <i>Plant, Cell &amp; Environment</i> <a href="https://doi.org/10.1111/pce.13749">https://doi.org/10.1111/pce.13749</a></p>
+<div class="g-col-1" data-index="5">
+<a href="" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="./img/headshots/evan_test.JPG" class="thumbnail-image card-img" style="height: 200px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Evan Wyers
+</h5>
+<div class="card-subtitle listing-subtitle">
+’27
 </div>
-<div>
-<p>Guo, J.S., K.R. Hultine, G.W. Koch, H. Kropp, K. Ogle. (2020) <b>Temporal shifts in iso/anisohydry revealed from daily observations of plant water potential in a dominant desert shrub.</b> <i>New Phytologist.</i> <a href="https://doi.org/10.1111/nph.16196">https://doi.org/10.1111/nph.16196</a></p>
 </div>
-<br><br>
-<h2 class="anchored">
-2019
-</h2>
-<h4 class="anchored">
-Article
-</h4>
-<div>
-<p>Ogle, K., D.M.P. Peltier, M.K. Fell, J.S. Guo, H. Kropp, J.J. Barber. (2019) <b>Should we be concerned about multiple comparisons in hierarchical Bayesian models?</b> <i>Methods in Ecology and Evolution.</i> <a href="https://doi.org/10.1111/2041-210X.13139">https://doi.org/10.1111/2041-210X.13139</a></p>
+</div></a>
 </div>
-<div>
-<p>Guo, J.S. and K. Ogle. (2019) <b>Antecedent soil water content and vapor pressure deficit interactively control water potential in Larrea tridentata.</b> <i>New Phytologist</i> <a href="https://doi.org/10.1111/nph.15374">https://doi.org/10.1111/nph.15374</a></p>
 </div>
-<br><br>
-<h2 class="anchored">
-2018
-</h2>
-<h4 class="anchored">
-Article
-</h4>
-<div>
-<p>Guo, J.S., B.A. Hungate, T.E. Kolb, G.W. Koch. (2018) <b>Water source niche overlap increases with site moisture availability in woody perennials.</b> <i>Plant Ecology.</i> <a href="https://doi.org/10.1007/s11258-018-0829-z">https://doi.org/10.1007/s11258-018-0829-z</a></p>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
-<p><br><br></p>
+</section>
+<section id="lab-alumni" class="level2">
+<h2 class="anchored" data-anchor-id="lab-alumni">Lab Alumni</h2>
+<div id="listing-lab-alumni" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-lab-alumni-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-lab-alumni'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-subtitle" data-direction="asc">
+        Grad Year
+      </option>
+      <option value="listing-image" data-direction="asc">
+      </option>
+      <option value="listing-title-sort" data-direction="asc">
+        Name
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-image" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;"> </a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Name</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-subtitle" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Grad Year</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-title-sort="LeTest James">
+<td>
+<span class="listing-image"><img loading="lazy" src="./img/headshots/LeTest_James.png" style="height: 25px;"></span>
+</td>
+<td>
+<span class="listing-title">LeTest James</span>
+</td>
+<td>
+<span class="listing-subtitle">’13</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-title-sort="Lea Twicken">
+<td>
+<span class="listing-image"><img loading="lazy" src="./img/headshots/NA" style="height: 25px;"></span>
+</td>
+<td>
+<span class="listing-title">Lea Twicken</span>
+</td>
+<td>
+<span class="listing-subtitle">’25</span>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<section id="in-situ-soil-moisture-release-curves" class="level3">
+<h3 class="anchored" data-anchor-id="in-situ-soil-moisture-release-curves"><em>In situ</em> soil moisture release curves</h3>
+<p>The RainMan project explores the plant and ecosystem consequences of temporal repackaging of precipitation. The <a href="https://viz.datascience.arizona.edu/rainman-soildata/">app</a> shows how soil water content and soil water potential respond to different treatments. I also <a href="https://viz.datascience.arizona.edu/VG_curves/">report</a> Van Genuchten parameters that were derived from <em>in situ</em> sensors.</p>
+</section>
+<section id="timeseries-analysis-of-vocs" class="level3">
+<h3 class="anchored" data-anchor-id="timeseries-analysis-of-vocs">Timeseries analysis of VOCs</h3>
+<p>Volatile organic compounds (VOCs) of decomposing litter can signal the presence and activity of the microbial community. I designed an algorithm and <a href="https://viz.datascience.arizona.edu/VOC-timeseries/">app</a> for detrending, modeling, and classifying 304 VOC timeseries.</p>
+</section>
+<section id="exploring-a-c.-diffile-gene-expression-database" class="level3">
+<h3 class="anchored" data-anchor-id="exploring-a-c.-diffile-gene-expression-database">Exploring a <em>C. diffile</em> gene expression database</h3>
+<p>The bacterial pathogen <em>Clostridioides difficile</em> is the leading cause of health-care related bacterial infections in the US, and the mechanisms of disease are poorly understood and actively investigated. I built an <a href="https://viz.datascience.arizona.edu/cdiff_dashboard2/">app</a> for researchers to query and visualize gene expression data across published studies.</p>
+</section>
+<section id="postfire-effect-of-rangeland-restoration-practices" class="level3">
+<h3 class="anchored" data-anchor-id="postfire-effect-of-rangeland-restoration-practices">Postfire effect of rangeland restoration practices</h3>
+<p>A naturally-occurring fire burned a rangeland restoration experiment, offering a unique opportunity to assess how well herbicide, grazing, and native grass seeding could control cheatgrass invasion after a major disturbance. I implemented a series of Bayesian ANOVAs to assess biomass, count, and cover of <em>Bromus tectorum</em> that accounted for overdispersion and a complex experimental design. The <a href="https://doi.org/10.1002/2688-8319.12215">paper</a> and <a href="https://github.com/cct-datascience/rangeland-restore">repository</a> are openly accessible.</p>
+</section>
+<section id="predicting-trends-in-us-organic-agriculture" class="level3">
+<h3 class="anchored" data-anchor-id="predicting-trends-in-us-organic-agriculture">Predicting trends in US organic agriculture</h3>
+<p>Understanding future trends in organic agriculture sales can inform production decisions by growers; while the USDA conducts surveys at the state level, data are infrequent and sometimes missing. We developed Bayesian hierarchical regression models to estimate trends in the number of organic farms, area under organic production, and sales of organic produce, which included missing values and error estimates. The <a href="https://doi.org/10.1016/j.crsust.2021.100097">paper</a> and <a href="https://github.com/cct-datascience/state_organic_ag">repository</a> are openly accessible.</p>
 
 
+
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
