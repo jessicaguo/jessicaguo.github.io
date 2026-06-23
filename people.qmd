@@ -47,7 +47,7 @@ format:
     toc-location: left
 ---
 
-## Current Students
+## Current Members
 
 :::{#lab-member}
 :::
@@ -58,7 +58,7 @@ format:
 :::{#lab-alumni}
 :::
 
-### *In situ* soil moisture release curves
+<!-- ### *In situ* soil moisture release curves -->
 
 <!-- The RainMan project explores the plant and ecosystem consequences of temporal repackaging of precipitation. The [app](https://viz.datascience.arizona.edu/rainman-soildata/) shows how soil water content and soil water potential respond to different treatments. I also [report](https://viz.datascience.arizona.edu/VG_curves/) Van Genuchten parameters that were derived from *in situ* sensors. -->
 
