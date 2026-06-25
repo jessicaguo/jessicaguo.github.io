@@ -1,6 +1,6 @@
 ---
-title: "People"
-description: "Meet the PEPPER Lab's working group!"
+# title: "People"
+# description: "Meet the PEPPER Lab's working group!"
 
 page-layout: full
 date-format: "YYYY"
@@ -14,7 +14,7 @@ listing:  #an example of listing external links
   fields: [image, title, subtitle]
   grid-item-align: center
   grid-columns: 4
-  image-height: 200px
+  image-height: 300px
   categories: false
 #  sort-ui: true
 #  filter-ui: true
