@@ -12,9 +12,16 @@ knitr::opts_chunk$set(echo = TRUE)
 library(htmltools)
 library(dplyr)
 library(readr)
+library(readxl)
 
-pub.data <- read_csv("data/academic_dataset.csv") |> 
-  filter(status == "Published")
+# pub.data <- read_csv("data/academic_dataset.csv") |>
+#   filter(status == "Published")
+
+pub.data <- read_excel("data/authorship-table-guo-2026-06-23.xls") |>
+  mutate(title = paste0(title, "."),
+         authors = paste0(authors, "."),
+         item_info = paste0(item_info, "."))
+
 
 
 years <- unique(pub.data$year) |> sort(decreasing = T)
@@ -33,7 +40,7 @@ for(k in years){
      for(i in 1:nrow(pub.k)){
        cat(paste0(
          div(
-          pub.k$authors[i], 
+          pub.k$authors[i],
           paste0("(", pub.k$year[i], ") "),
           tags$b(pub.k$title[i]),
           tags$i(pub.k$item_info[i]),

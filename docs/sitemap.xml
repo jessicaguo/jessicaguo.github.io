@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jessicaguo.github.io/teaching.html</loc>
-    <lastmod>2023-11-17T01:12:04.912Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jessicaguo.github.io/pubs.html</loc>
-    <lastmod>2023-03-29T15:51:11.654Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jessicaguo.github.io/ds.html</loc>
-    <lastmod>2023-03-29T15:59:25.209Z</lastmod>
+    <loc>https://jessicaguo.github.io/people.html</loc>
+    <lastmod>2026-06-25T23:40:34.626Z</lastmod>
   </url>
   <url>
     <loc>https://jessicaguo.github.io/index.html</loc>
-    <lastmod>2023-11-17T22:57:08.112Z</lastmod>
+    <lastmod>2026-06-22T22:36:32.861Z</lastmod>
   </url>
   <url>
     <loc>https://jessicaguo.github.io/research.html</loc>
-    <lastmod>2023-11-17T01:04:38.583Z</lastmod>
+    <lastmod>2026-06-18T17:14:09.507Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jessicaguo.github.io/teaching.html</loc>
+    <lastmod>2026-06-22T17:20:52.278Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jessicaguo.github.io/current-students.html</loc>
+    <lastmod>2026-06-22T17:19:21.330Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jessicaguo.github.io/pubs.html</loc>
+    <lastmod>2026-06-23T17:46:34.906Z</lastmod>
   </url>
 </urlset>
