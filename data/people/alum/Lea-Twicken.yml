@@ -2,10 +2,15 @@
 first: Lea
 last: Twicken
 school: Harvey Mudd College
-subtitle: '''25'
+abrev: HMC
+graduation_year: '''25'
 PEPPER_start_year: 2024
-path: .na.character
+link_to_share_ie_linkedIn: https://NA
 major: .na.character
-image: /img/headshots/NA
+exact_filename_of_headshot_including_filetype_extension: /img/headshots/Lea_Twicken.jpg
 title: Lea Twicken
+subtitle: HMC '25
+image: /img/headshots/Lea_Twicken.jpg
+path: https://NA
+description: .na.character
 

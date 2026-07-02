@@ -2,10 +2,15 @@
 first: Claire
 last: Johnston
 school: Harvey Mudd College
-subtitle: '''29'
+abrev: HMC
+graduation_year: '''29'
 PEPPER_start_year: 2026
-path: www.linkedin.com/in/claire-johnston-9637ab337
+link_to_share_ie_linkedIn: https://www.linkedin.com/in/claire-johnston-9637ab337
 major: Physics
-image: /img/headshots/NA
+exact_filename_of_headshot_including_filetype_extension: /img/headshots/NA
 title: Claire Johnston
+subtitle: HMC '29<br>Physics
+image: /img/headshots/NA
+path: https://www.linkedin.com/in/claire-johnston-9637ab337
+description: Physics
 

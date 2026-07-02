@@ -2,10 +2,15 @@
 first: Clover
 last: Weiss
 school: Harvey Mudd College
-subtitle: '''28'
+abrev: HMC
+graduation_year: '''28'
 PEPPER_start_year: 2026
-path: .na.character
+link_to_share_ie_linkedIn: https://NA
 major: Mathematical and Computational Biology
-image: /img/headshots/NA
+exact_filename_of_headshot_including_filetype_extension: /img/headshots/NA
 title: Clover Weiss
+subtitle: HMC '28<br>Mathematical and Computational Biology
+image: /img/headshots/NA
+path: https://NA
+description: Mathematical and Computational Biology
 
