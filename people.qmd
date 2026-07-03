@@ -9,6 +9,7 @@ listing:  #an example of listing external links
 - id: lab-member
   sort: 
     - "PEPPER_start_year asc"
+    - "graduation_year asc"
     - "last asc"
   type: grid
   fields: [image, title, subtitle]

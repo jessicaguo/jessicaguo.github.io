@@ -36,9 +36,15 @@ current <- read_sheet(
   mutate(exact_filename_of_headshot_including_filetype_extension = paste0("/img/headshots/",exact_filename_of_headshot_including_filetype_extension),
          title = paste0(first, " ", last),
          graduation_year = ifelse(
-           is.na(graduation_year),"",
-           paste0("'", str_extract(graduation_year, pattern = "..(..)", group = 1))),         PEPPER_start_year = as.integer(PEPPER_start_year))|> 
-  rename(subtitle = graduation_year, image = exact_filename_of_headshot_including_filetype_extension, path = link_to_share_ie_linkedIn)
+           is.na(graduation_year),NA,
+           paste0("'", str_extract(graduation_year, pattern = "..(..)", group = 1))),
+         PEPPER_start_year = as.integer(PEPPER_start_year),
+         link_to_share_ie_linkedIn = paste0("https://",link_to_share_ie_linkedIn))|> 
+  mutate(subtitle = if_else(is.na(abrev), "",paste0(abrev, " ", graduation_year,"<br>", major)), 
+         image = exact_filename_of_headshot_including_filetype_extension, 
+         path = link_to_share_ie_linkedIn,
+         description = major,
+         across(school:major, ~ replace_na(.x, "&nbsp;")))
 
 write_csv(current, file = "data/people-current.csv")
 
@@ -57,11 +63,14 @@ alum <-  read_sheet(ss = "https://docs.google.com/spreadsheets/d/1p4d0mhtqWc9HJQ
     graduation_year = ifelse(is.na(graduation_year), "", paste0(
       "'", str_extract(graduation_year, pattern = "..(..)", group = 1)
     )),
-    PEPPER_start_year = as.integer(PEPPER_start_year)
+    PEPPER_start_year = as.integer(PEPPER_start_year),
+    link_to_share_ie_linkedIn = paste0("https://",link_to_share_ie_linkedIn)
   ) |>
-  rename(subtitle = graduation_year,
+  mutate(subtitle = paste0(abrev, " ", graduation_year),
          image = exact_filename_of_headshot_including_filetype_extension,
-         path = link_to_share_ie_linkedIn)
+         path = link_to_share_ie_linkedIn,
+         description = major) 
+  
 
 write_csv(alum, file = "data/people-alum.csv")
 

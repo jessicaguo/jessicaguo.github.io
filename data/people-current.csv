@@ -1,10 +1,10 @@
-first,last,school,subtitle,PEPPER_start_year,path,major,image,title
-Professor Jessica,Guo,NA,,2022,NA,NA,/img/headshots/guo.jpeg,Professor Jessica Guo
-Danny,Tran,Harvey Mudd College,'27,2024,https://www.linkedin.com/in/trandanny/,CS + Climate,/img/headshots/NA,Danny Tran
-Taylor,Baugh,Harvey Mudd College,'27,2024,www.linkedin.com/in/taylor-baugh-79a69b307,Climate & Biology,/img/headshots/taylor_baugh.jpeg,Taylor Baugh
-Aabhas,Senapati,Harvey Mudd College,'27,2024,https://linkedin.com/in/aabhassenapati,"IPS: Ecology, Electronics, and Sensing",/img/headshots/aabhas_headshot.jpg,Aabhas Senapati
-Evan,Wyers,Pitzer College,'27,2026,NA,Environmental Science,/img/headshots/evan_test.JPG,Evan Wyers
-Claire,Johnston,Harvey Mudd College,'29,2026,www.linkedin.com/in/claire-johnston-9637ab337,Physics,/img/headshots/NA,Claire Johnston
-Clover,Weiss,Harvey Mudd College,'28,2026,NA,Mathematical and Computational Biology,/img/headshots/NA,Clover Weiss
-Diego,Pacheco,Harvey Mudd College,'27,2025,www.linkedin.com/in/diego-pacheco-187587269,Biology,/img/headshots/Diego_Pacheco.JPG,Diego Pacheco
-Chloe,Polin,Harvey Mudd College,'29,2026,NA,NA,/img/headshots/NA,Chloe Polin
+first,last,school,abrev,graduation_year,PEPPER_start_year,link_to_share_ie_linkedIn,major,exact_filename_of_headshot_including_filetype_extension,title,subtitle,image,path,description
+Assistant Prof. Jessica,Guo,&nbsp;,&nbsp;,&nbsp;,2022,https://NA,&nbsp;,/img/headshots/Jessica_Guo.jpeg,Assistant Prof. Jessica Guo,,/img/headshots/Jessica_Guo.jpeg,https://NA,NA
+Danny,Tran,Harvey Mudd College,HMC,'27,2024,https://https://www.linkedin.com/in/trandanny/,CS + Climate,/img/headshots/NA,Danny Tran,HMC '27<br>CS + Climate,/img/headshots/NA,https://https://www.linkedin.com/in/trandanny/,CS + Climate
+Taylor,Baugh,Harvey Mudd College,HMC,'27,2024,https://www.linkedin.com/in/taylor-baugh-79a69b307,Biology + Climate,/img/headshots/Taylor_Baugh.jpeg,Taylor Baugh,HMC '27<br>Biology + Climate,/img/headshots/Taylor_Baugh.jpeg,https://www.linkedin.com/in/taylor-baugh-79a69b307,Biology + Climate
+Aabhas,Senapati,Harvey Mudd College,HMC,'27,2024,https://https://linkedin.com/in/aabhassenapati,"IPS: Ecology, Electronics, and Sensing",/img/headshots/Aabhas_Senapati.jpg,Aabhas Senapati,"HMC '27<br>IPS: Ecology, Electronics, and Sensing",/img/headshots/Aabhas_Senapati.jpg,https://https://linkedin.com/in/aabhassenapati,"IPS: Ecology, Electronics, and Sensing"
+Evan,Wyers,Pitzer College,PZ,'27,2026,https://NA,Environmental Science,/img/headshots/Evan_Wyers.jpeg,Evan Wyers,PZ '27<br>Environmental Science,/img/headshots/Evan_Wyers.jpeg,https://NA,Environmental Science
+Claire,Johnston,Harvey Mudd College,HMC,'29,2026,https://www.linkedin.com/in/claire-johnston-9637ab337,Physics,/img/headshots/NA,Claire Johnston,HMC '29<br>Physics,/img/headshots/NA,https://www.linkedin.com/in/claire-johnston-9637ab337,Physics
+Clover,Weiss,Harvey Mudd College,HMC,'28,2026,https://NA,Mathematical and Computational Biology,/img/headshots/NA,Clover Weiss,HMC '28<br>Mathematical and Computational Biology,/img/headshots/NA,https://NA,Mathematical and Computational Biology
+Diego,Pacheco,Harvey Mudd College,HMC,'27,2025,https://www.linkedin.com/in/diego-pacheco-187587269,Biology,/img/headshots/Diego_Pacheco.jpg,Diego Pacheco,HMC '27<br>Biology,/img/headshots/Diego_Pacheco.jpg,https://www.linkedin.com/in/diego-pacheco-187587269,Biology
+Chloe,Polin,Harvey Mudd College,HMC,'29,2026,https://NA,&nbsp;,/img/headshots/NA,Chloe Polin,HMC '29<br>NA,/img/headshots/NA,https://NA,NA

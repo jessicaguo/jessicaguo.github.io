@@ -2,10 +2,15 @@
 first: Aabhas
 last: Senapati
 school: Harvey Mudd College
-subtitle: '''27'
+abrev: HMC
+graduation_year: '''27'
 PEPPER_start_year: 2024
-path: https://linkedin.com/in/aabhassenapati
+link_to_share_ie_linkedIn: https://https://linkedin.com/in/aabhassenapati
 major: 'IPS: Ecology, Electronics, and Sensing'
-image: /img/headshots/aabhas_headshot.jpg
+exact_filename_of_headshot_including_filetype_extension: /img/headshots/Aabhas_Senapati.jpg
 title: Aabhas Senapati
+subtitle: 'HMC ''27<br>IPS: Ecology, Electronics, and Sensing'
+image: /img/headshots/Aabhas_Senapati.jpg
+path: https://https://linkedin.com/in/aabhassenapati
+description: 'IPS: Ecology, Electronics, and Sensing'
 

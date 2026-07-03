@@ -2,10 +2,15 @@
 first: Evan
 last: Wyers
 school: Pitzer College
-subtitle: '''27'
+abrev: PZ
+graduation_year: '''27'
 PEPPER_start_year: 2026
-path: .na.character
+link_to_share_ie_linkedIn: https://NA
 major: Environmental Science
-image: /img/headshots/evan_test.JPG
+exact_filename_of_headshot_including_filetype_extension: /img/headshots/Evan_Wyers.jpeg
 title: Evan Wyers
+subtitle: PZ '27<br>Environmental Science
+image: /img/headshots/Evan_Wyers.jpeg
+path: https://NA
+description: Environmental Science
 
