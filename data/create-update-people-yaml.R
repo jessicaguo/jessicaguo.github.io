@@ -14,7 +14,7 @@ library(googlesheets4)
 #add in headshots to repo
 
 #get filenames in folder
-files <- drive_ls(path = "https://drive.google.com/drive/folders/142uzq6myiLz_6QY_JGt5LKjkz4_KeVTz?usp=share_link")
+files <- drive_ls(path = "https://drive.google.com/drive/folders/142uzq6myiLz_6QY_JGt5LKjkz4_KeVTz")
 
 for (i in 1:nrow(files)) {
 drive_download(overwrite = TRUE,
@@ -74,12 +74,13 @@ alum <-  read_sheet(ss = "https://docs.google.com/spreadsheets/d/1p4d0mhtqWc9HJQ
 
 write_csv(alum, file = "data/people-alum.csv")
 
-
+# Make individual YAML's for current people
 for (i in 1:nrow(current)) {
   print(i)
   text <- as.yaml(x = current[i ,])
   write_lines(x = c("---",text), file = paste0("data/people/current/", current$first[i],"-",current$last[i], ".yml" ))}
 
+# Make individual YAML's for alumns
 for (i in 1:nrow(alum)) {
   print(i)
   text <- as.yaml(x = alum[i ,])
