@@ -20,7 +20,7 @@ listing:  #an example of listing external links
 #  sort-ui: true
 #  filter-ui: true
   contents: 
-    - /data/people/current/*.yml
+    - /data-and-scripts/people/current/*.yml
 
 - id: lab-alumni
   sort: 
@@ -30,7 +30,7 @@ listing:  #an example of listing external links
   fields: [image, title, subtitle]
   grid-item-align: center  
   grid-columns: 4
-  image-height: 25px
+  image-height: 100px
   field-display-names: 
       title: "Name"
       subtitle: "Grad Year"
@@ -38,7 +38,7 @@ listing:  #an example of listing external links
 #  categories: true
 #  sort-ui: true
 #  filter-ui: true
-  contents: data/people/alum/*.yml
+  contents: data-and-scripts/people/alum/*.yml
 
 title-block-banner: true
 format:

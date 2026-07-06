@@ -17,7 +17,7 @@ library(readxl)
 # pub.data <- read_csv("data/academic_dataset.csv") |>
 #   filter(status == "Published")
 
-pub.data <- read_excel("data/authorship-table-guo-2026-06-23.xls") |>
+pub.data <- read_excel("data-and-scripts/authorship-table-guo-2026-06-23.xls") |>
   mutate(title = paste0(title, "."),
          authors = paste0(authors, "."),
          item_info = paste0(item_info, "."))
