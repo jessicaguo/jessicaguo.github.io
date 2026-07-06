@@ -14,7 +14,7 @@ library(googlesheets4)
 #add in headshots to repo
 
 #get filenames in folder
-files <- drive_ls(path = "https://drive.google.com/drive/folders/142uzq6myiLz_6QY_JGt5LKjkz4_KeVTz?usp=share_link")
+files <- drive_ls(path = "https://drive.google.com/drive/folders/142uzq6myiLz_6QY_JGt5LKjkz4_KeVTz")
 
 for (i in 1:nrow(files)) {
 drive_download(overwrite = TRUE,
