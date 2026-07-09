@@ -2,34 +2,40 @@
 library(tidyverse)
 library(httr2)
 library(jsonlite)
-library(readxl)
-library(fuzzyjoin)
-library(countrycode)
-library(openxlsx)
+
 
 
 token <- Sys.getenv("API_TOKEN")
 
-baseURL <- "https://api.clarivate.com/apis/wos-starter/v2"
+baseURL <- "https://api.clarivate.com/apis/wos-starter/v1/"
 
-token <- Sys.getenv("API_TOKEN")
+#here is info about the api https://developer.clarivate.com/apis/wos-starter
+author_id <- "GAZ-9543-2022"
 
-author_id <- 29169926
 
-
-#still modifying this
-allAPI <- request(baseURL)|> 
-  req_headers("Authorization" = paste("X-ApiKey", token, sep = " "),"Accept" = "application/json") |>
-  req_url_path("api/database/") |>
-  #req_url_query(label = "gef") |>
-  #req_dry_run()
+#still modifying this, but it uses a combination of AU (author) and AI (author
+#identifier) to get all j s guo results
+response <- request(baseURL)|> 
+  req_headers("X-ApiKey" = token,"Accept" = "application/json") |>
+  req_url_path_append("documents") |>
+  req_url_query(q = paste0("AU=", author_id, " OR AI=", author_id),
+                limit = 50) |>
+  # req_dry_run()
   req_perform()|> 
   resp_body_json(simplifyVector = TRUE)
 
 
-#this is to change all of the list columns out to be their own columns
-approachesWIDE <- approaches |> 
-  unnest_wider(where(is.list), names_sep = "_") |> 
-  unnest_wider(where(is.list), names_sep = "_") |> 
-  unnest_wider(where(is.list), names_sep = "_") |> 
-  unnest_wider(where(is.list), names_sep = "_")
+responseDF <- response[[2]] |> 
+  unnest(cols = everything() ) |> 
+  unnest(cols = pages , names_sep = "") |> 
+  rename_with(~ str_replace_all(., "\\$", replacement = "_")) |> 
+  mutate(sourceTitle = str_to_title(sourceTitle),
+         publishMonth = str_to_title(publishMonth),
+         authorsList = map(responseDF$authors, "wosStandard"),
+         authorsList = map_chr(authorsList, ~ str_c(.x, collapse = "; ")),
+         link = paste0("https://doi.org/", doi),
+         title = str_remove_all(title, "<[^<>]*>|&lt;[^&;]*&gt;") #removes html whatevers from titles
+          )
+
+
+write_csv(responseDF, "data-and-scripts/api_authorship.csv")
