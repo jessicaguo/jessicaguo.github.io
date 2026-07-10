@@ -3,13 +3,14 @@ project:
   output-dir: docs
 
 website:
-  
+  title: PEPPER Lab HMC
   image: img/PEPPER-logo.png
   site-url: https://jessicaguo.github.io
   repo-url: https://github.com/jessicaguo/jessicaguo.github.io
   twitter-card:
     creator: "@JessicaSGuo"
   navbar:
+    title: "&#8203;"
     background: "#676d02"
     logo: img/PEPPER-logo.png
     left:
