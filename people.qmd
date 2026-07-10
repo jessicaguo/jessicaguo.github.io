@@ -27,7 +27,7 @@ listing:  #an example of listing external links
     - "graduation_year desc"
     - "last asc"  
   type: table
-  fields: [image, title, subtitle]
+  fields: [image, title, subtitle, major]
   grid-item-align: center  
   grid-columns: 4
   image-height: 100px
@@ -35,6 +35,7 @@ listing:  #an example of listing external links
       title: "Name"
       subtitle: "Grad Year"
       started: "Graduated"
+      major: Major
 #  categories: true
 #  sort-ui: true
 #  filter-ui: true
