@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>people</title>
+<title>people – PEPPER Lab HMC</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-subtitle','listing-major',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-first","listing-last","listing-school","listing-abrev","listing-graduation_year","listing-PEPPER_start_year","listing-link_to_share_ie_linkedIn","listing-major","listing-exact_filename_of_headshot_including_filetype_extension","listing-title","listing-subtitle","listing-image","listing-description"],
     };
@@ -161,6 +161,10 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="styles.css">
+<meta name="twitter:title" content="PEPPER Lab HMC">
+<meta name="twitter:image" content="https://jessicaguo.github.io/img/headshots/Jessica_Guo.jpeg">
+<meta name="twitter:creator" content="@JessicaSGuo">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="floating nav-fixed quarto-light">
@@ -173,6 +177,9 @@ window.Quarto = {
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./img/PEPPER-logo.png" alt="" class="navbar-logo light-content">
     <img src="./img/PEPPER-logo.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">​</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -392,6 +399,9 @@ HMC ’29<br>NA
     <select id="listing-lab-alumni-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-lab-alumni'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
+      <option value="listing-major" data-direction="asc">
+        Major
+      </option>
       <option value="listing-title-sort" data-direction="asc">
         Name
       </option>
@@ -423,6 +433,10 @@ HMC ’29<br>NA
 <a class="sort" data-sort="listing-subtitle" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Grad Year</a>
 </th>
 
+<th>
+<a class="sort" data-sort="listing-major" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Major</a>
+</th>
+
 </tr>
 </thead>
 <tbody class="list">
@@ -432,10 +446,13 @@ HMC ’29<br>NA
 <span class="listing-image"><img loading="lazy" src="./img/headshots/Lea_Twicken.jpg" style="height: 100px;"></span>
 </td>
 <td>
-<a href="https://NA" class="title listing-title">Lea Twicken</a>
+<a href="https://www.linkedin.com/in/lea-twicken/" class="title listing-title">Lea Twicken</a>
 </td>
 <td>
 <span class="listing-subtitle">HMC ’25</span>
+</td>
+<td>
+<span class="listing-major">Mathematical and Computational Biology</span>
 </td>
 
 </tr>

@@ -46,7 +46,7 @@ current <- read_sheet(
          description = major,
          across(school:major, ~ replace_na(.x, "&nbsp;")))
 
-write_csv(current, file = "data/people-current.csv")
+  write_csv(current, file = "data-and-scripts/people-current.csv")
 
 alum <-  read_sheet(ss = "https://docs.google.com/spreadsheets/d/1p4d0mhtqWc9HJQJQqUMVdAtjllwz1uKYFLjmbRqjUMk/edit?usp=sharing",
                     sheet = 3,
@@ -72,18 +72,18 @@ alum <-  read_sheet(ss = "https://docs.google.com/spreadsheets/d/1p4d0mhtqWc9HJQ
          description = major) 
   
 
-write_csv(alum, file = "data/people-alum.csv")
+write_csv(alum, file = "data-and-scripts//people-alum.csv")
 
 # Make individual YAML's for current people
 for (i in 1:nrow(current)) {
   print(i)
   text <- as.yaml(x = current[i ,])
-  write_lines(x = c("---",text), file = paste0("data/people/current/", current$first[i],"-",current$last[i], ".yml" ))}
+  write_lines(x = c("---",text), file = paste0("data-and-scripts//people/current/", current$first[i],"-",current$last[i], ".yml" ))}
 
 # Make individual YAML's for alumns
 for (i in 1:nrow(alum)) {
   print(i)
   text <- as.yaml(x = alum[i ,])
-  write_lines(x = c("---",text), file = paste0("data/people/alum/", alum$first[i],"-",alum$last[i], ".yml" ))
+  write_lines(x = c("---",text), file = paste0("data-and-scripts//people/alum/", alum$first[i],"-",alum$last[i], ".yml" ))
 }
 
