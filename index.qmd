@@ -1,5 +1,5 @@
 ---
-title: "The Plant & Ecosystem Physiology, Potential, and Environment Lab"
+title: "The Plant & Ecosystem Physiology, Potential, and Environment (PEPPER) Lab"
 about:
   id: hero-heading
   template: jolla
