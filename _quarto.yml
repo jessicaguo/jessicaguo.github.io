@@ -7,6 +7,8 @@ website:
   image: img/PEPPER-logo.png
   site-url: https://jessicaguo.github.io
   repo-url: https://github.com/jessicaguo/jessicaguo.github.io
+  open-graph: true
+  favicon: "img/PEPPER-logo.png"
   twitter-card:
     creator: "@JessicaSGuo"
   navbar:
