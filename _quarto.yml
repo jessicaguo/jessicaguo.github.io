@@ -4,6 +4,7 @@ project:
 
 website:
   title: PEPPER Lab HMC
+  description: The Plant & Ecosystem Physiology, Potential, and Environment - PEPPER - Lab at Harvey Mudd College - HMC 
   image: img/PEPPER-logo.png
   site-url: https://jessicaguo.github.io
   repo-url: https://github.com/jessicaguo/jessicaguo.github.io
